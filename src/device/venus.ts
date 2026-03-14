@@ -575,6 +575,7 @@ function registerRuntimeInfoMessage(message: BuildMessageFn) {
           case '1':
             return 'manual';
           case '2':
+          case '5':
             return 'trading';
           default:
             return 'automatic';
@@ -1143,7 +1144,7 @@ function registerRuntimeInfoMessage(message: BuildMessageFn) {
             mode = 1;
             break;
           case 'trading':
-            mode = 2;
+            mode = 5;
             break;
           default:
             mode = 0;
